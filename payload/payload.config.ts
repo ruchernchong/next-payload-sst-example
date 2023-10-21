@@ -1,4 +1,5 @@
 import path from "path";
+import "dotenv/config";
 import { buildConfig } from "payload/config";
 import { mongooseAdapter } from "@payloadcms/db-mongodb";
 import { lexicalEditor } from "@payloadcms/richtext-lexical";
