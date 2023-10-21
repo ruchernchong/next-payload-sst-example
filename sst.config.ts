@@ -17,6 +17,12 @@ export default {
         },
       });
 
+      app.addDefaultFunctionEnv({
+        DATABASE_URI: process.env.DATABASE_URI as string,
+        PAYLOAD_SECRET: process.env.PAYLOAD_SECRET as string,
+        PAYLOAD_CONFIG_PATH: process.env.PAYLOAD_SECRET as string,
+      });
+
       stack.addOutputs({
         SiteUrl: site.url,
       });
