@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@payloadcms/db-mongodb": "^1.0.4",
-    "@payloadcms/next-payload": "^0.1.7",
+    "@payloadcms/next-payload": "^0.1.8",
     "@payloadcms/richtext-lexical": "^0.1.14",
     "dotenv": "^16.3.1",
     "next": "13.5.6",
@@ -27,6 +27,7 @@
     "constructs": "10.2.69",
     "eslint": "^8",
     "eslint-config-next": "13.5.6",
+    "pino": "^8.16.0",
     "postcss": "^8",
     "prettier": "^3.0.3",
     "sst": "^2.31.0",

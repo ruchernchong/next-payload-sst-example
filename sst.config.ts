@@ -1,5 +1,5 @@
 import { SSTConfig } from "sst";
-import { Config, NextjsSite } from "sst/constructs";
+import { NextjsSite } from "sst/constructs";
 
 export default {
   config(_input) {
@@ -12,7 +12,7 @@ export default {
     app.addDefaultFunctionEnv({
       DATABASE_URI: process.env.DATABASE_URI as string,
       PAYLOAD_SECRET: process.env.PAYLOAD_SECRET as string,
-      PAYLOAD_CONFIG_PATH: process.env.PAYLOAD_SECRET as string,
+      PAYLOAD_CONFIG_PATH: process.env.PAYLOAD_CONFIG_PATH as string,
     });
 
     app.stack(function Site({ stack }) {
@@ -20,6 +20,11 @@ export default {
         customDomain: {
           domainName: "next-payload-sst-example.ruchern.xyz",
           hostedZone: "ruchern.xyz",
+        },
+        environment: {
+          DATABASE_URI: process.env.DATABASE_URI as string,
+          PAYLOAD_SECRET: process.env.PAYLOAD_SECRET as string,
+          PAYLOAD_CONFIG_PATH: process.env.PAYLOAD_CONFIG_PATH as string,
         },
       });
 
