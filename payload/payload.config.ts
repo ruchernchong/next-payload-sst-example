@@ -2,6 +2,7 @@ import path from "path";
 import { buildConfig } from "payload/config";
 import { mongooseAdapter } from "@payloadcms/db-mongodb";
 import { lexicalEditor } from "@payloadcms/richtext-lexical";
+import { RichTextAdapter } from "payload/types";
 
 export default buildConfig({
   collections: [
@@ -13,7 +14,7 @@ export default buildConfig({
       dbName: "main",
     },
   }),
-  editor: lexicalEditor({}),
+  editor: lexicalEditor({}) as RichTextAdapter,
   globals: [
     // Your globals here
   ],
