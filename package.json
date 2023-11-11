@@ -9,12 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@payloadcms/db-mongodb": "^1.0.4",
-    "@payloadcms/next-payload": "^0.1.8",
-    "@payloadcms/richtext-lexical": "^0.1.14",
+    "@payloadcms/db-mongodb": "^1.0.8",
+    "@payloadcms/next-payload": "^0.1.9",
+    "@payloadcms/richtext-lexical": "^0.1.17",
     "dotenv": "^16.3.1",
     "next": "13.5.6",
-    "payload": "^2.0.11",
+    "payload": "^2.1.1",
     "react": "^18",
     "react-dom": "^18"
   },
